@@ -1,0 +1,10 @@
+.footer{
+    height: 10vh;
+    background-color: #213F36;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    font-size: 1.3em;
+}

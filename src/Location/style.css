@@ -1,0 +1,14 @@
+.location{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/fundo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.location-body{
+    display: flex;
+    height: calc(100vh - 145px);
+    justify-content: center;
+    align-items: center;
+}
