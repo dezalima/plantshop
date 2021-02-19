@@ -6,25 +6,27 @@ import {useState} from 'react';
 import Productlist from './components/Productlist';
 
 function Product() {
-    const state={
-        isActive: false
-
+    const [active, setActive] = useState(false);
+    const change = () =>{
+        setActive(!active);
+    }
+    const [click, setClick] = useState(0);
+    function Increase (){
+        setClick(click+1);  
+        console.log(click)
     }
     return (
         <main className="product">
-            <Navbar />
+            <Navbar click={click}  />
             <section className="product-body">
                 <h1>Foliage for plants.</h1>
                 <p>Add some color to your home, give it a little attention, the plants will accompany you quietly</p>
-                <div className="product-list">
-                    <Productlist />
-                </div>
+                    <div className={active === true ? 'hidden product-list' : 'show product-list'}>
+                    <Productlist onClick={() => Increase} />
+                    </div>
                 <div className="product-button">
                     <Btn 
-                    className={state.isActive ? "show" : "hidden"} 
-                    onClick={()=>{
-                        state({isActive: !state.isActive})
-                    }}
+                    onClick={change}
                     />
                 </div>
             </section>

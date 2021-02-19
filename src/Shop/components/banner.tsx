@@ -1,4 +1,5 @@
 import './style-components.css'
+import { Link } from 'react-router-dom';
 type Props={
     sub: string;
     info: string;
@@ -9,7 +10,7 @@ function Banner({sub, info}:Props) {
             <h1>Service for <span>home plants.</span></h1>
             <p className="sub">{sub}</p>
             <p className="info">{info}</p>
-            <button>Try for service</button>
+            <Link to="/Shop"><button>Try for service</button></Link>
         </div>
     );
 }

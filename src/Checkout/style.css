@@ -1,0 +1,19 @@
+select {
+  color: gray!important;
+}
+
+.checkout-main {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./img/fundo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.checkout {
+  display: flex;
+  height: calc(100vh - 145px);
+  justify-content: space-around;
+  align-items: center;
+}

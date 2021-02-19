@@ -1,20 +1,21 @@
 import './style-components.css';
 import { ReactComponent as O } from './svg/O.svg';
 import { ReactComponent as Basket } from './svg/Basket.svg';
+import handleCrease from '../../Navbar'
 
 
 type Props = {
-    nome: string;
-    
+    nome: string; 
 }
 
 
 function Product({nome}:Props) {
+
     return (
         <li className="produto">
             <span><O /></span>
             <p>{nome}</p>
-            <button><Basket /></button> 
+            <button onClick={handleCrease}><Basket /></button> 
 
         </li>
     );

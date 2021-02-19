@@ -21,7 +21,14 @@
     padding: 10px 15px;
     background-color: #B7EAAF;
     border-radius: 10px;
+    font-size: 15px;
     color: black !important;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+.menu-check:focus{
+    outline-style: none;
 }
 .menu-logo{
     height: 10vh;

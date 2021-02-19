@@ -44,6 +44,9 @@
     border-bottom: 1px solid white;
     opacity: 0.8;
 }
+.produto:hover{
+    background-color: rgba(0, 0, 0, 0.13);
+}
 .produto p{
     color: aliceblue;
     font-size: 12px;

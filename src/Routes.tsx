@@ -5,9 +5,10 @@ import Shop from './Shop';
 import Location from './Location';
 import Product from './Product'
 import NotFoundPage from './404';
+import Checkout from './Checkout';
 
-function Routes (){
-    return(
+function Routes() {
+    return (
         <BrowserRouter>
             <Switch>
                 <Route exact path="/">
@@ -23,8 +24,10 @@ function Routes (){
                     <Location />
                 </Route>
                 <Route path="/product">
-
                     <Product />
+                </Route>         
+                <Route path="/checkout">
+                    <Checkout />
                 </Route>
                 <Route path="*" component={NotFoundPage} />
             </Switch>

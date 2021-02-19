@@ -1,0 +1,89 @@
+.sidebar{
+    background-color: rgba(8, 8, 8, 0.534);
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.sidebar-car{
+    width: 25%;
+    height: inherit;
+    background-color: #b7e9af;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    /* right: -100%; */
+    transition: 850ms;
+}
+.active {
+    right: 0;
+    transition: 350ms;
+  }
+.car-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20%;
+}
+.car-header h1{
+    color: aliceblue;
+    font-size: 3em;
+    margin: 0;
+}
+.car-body{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgba(240, 248, 255, 0.651);
+    border-radius: 25px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.car-body h2{
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: gray;
+    text-align: center;
+}
+.car-body-list{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.car-body-list p{
+    color: gray;
+}
+.car-body-li{
+    display: flex;
+    justify-content: space-between;
+    width: inherit;
+}
+.car-body-li button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.car-button{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.car-button button{
+    border:none;
+    background-color:rgba(240, 248, 255, 0.651);
+    border-radius: 25px;
+    padding: 12px 17px;
+    color: gray;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+.car-button button:focus{
+    outline-style: none;
+}

@@ -48,11 +48,13 @@
     border-radius: 20px;
     overflow: hidden;
     background-size: 120%; 
-    transition: background-size 1s; 
+    transition: 1s all; 
     cursor: pointer;
+    filter: grayscale(35%);
 }
 .card-shop:hover{
     background-size: 140%;
+    filter: grayscale(0%);
 }
 .card-foliage{
     background-image: url(../img/card-1.png);

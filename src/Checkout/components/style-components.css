@@ -1,0 +1,178 @@
+.label-float {
+    position: relative;
+    padding-top: 13px;
+    width: 100%;
+}
+
+.label-float input {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    outline: none;
+    width: 90%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    font-size: 12px;
+    transition: all .1s linear;
+}
+
+.label-float input:focus {
+    border: 2px solid #b7e9af;
+}
+
+.label-float input::placeholder {
+    color: transparent;
+}
+
+.label-float label {
+    pointer-events: none;
+    position: absolute;
+    top: calc(20% - 8px);
+    left: 15px;
+    transition: all .1s linear;
+    background-color: white;
+    padding: 5px;
+    box-sizing: border-box;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.label-float input:focus+label, .label-float input:not(:placeholder-shown)+label {
+    font-size: 13px;
+    top: 7px;
+    color: #b7e9af;
+}
+
+.button-form {
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.15));
+    padding: 5px 25px;
+    color: gray;
+    font-size: 1.1em;
+    text-align: center;
+    border: 2px solid gray;
+    background: transparent;
+    opacity: 0.8;
+    border-radius: 25px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.button-form:focus {
+    outline-style: none;
+}
+
+.label-radio {
+    margin: 15px 0;
+}
+
+.label-radio label {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    margin-right: 30px;
+}
+
+.form-card-number {
+    display: flex;
+}
+
+.form-card-number .label-float {
+    width: 60%;
+    margin-right: 35px;
+}
+
+.w-code {
+    width: 25% !important;
+}
+
+.form-select {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.form-select h3 {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    margin-right: 10px;
+}
+
+.form-select label {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    margin: 0 2px;
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.form-select label select {
+    margin-left: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+.form-select label select:focus {
+    outline-style: none;
+}
+
+.form-select label select option {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-info {
+    background-color: white;
+    padding: 20px;
+    border-radius: 7px;
+    box-shadow: 4px 5px 9px black;
+    width: 40%;
+    height: 85%;
+    box-sizing: border-box;
+    overflow-y: auto;
+    position: relative;
+}
+.disable {
+    pointer-events: none;
+    background-color: #e4e4e4;
+    transition: 1s all;
+}
+.disable input{
+    background-color: #e4e4e4;
+}
+.disable label{
+    background-color: #e4e4e4;
+}
+
+
+.form-info h2 {
+    size: 2em;
+    color: gray;
+    margin: 8px 0;
+}
+
+/* Barra de rolagem - n funciona do Explorer */
+
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #EEE;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:vertical, ::-webkit-scrollbar-thumb:horizontal {
+    background-color: #b7e9af;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:vertical:hover, ::-webkit-scrollbar-thumb:horizontal:hover {
+    background-color: #addba6;
+}
+
