@@ -10,11 +10,12 @@ function Bannerlocation(){
         <p>No. 100, Ln. 00, Chifeng St., Datong Dist., Taipei City 103, Taiwan (R.O.C.)</p>
         <p>Open  11:00 - 22:00</p>
         <button className="banner-button" onClick={()=>{setIsVisible(true)}}>Contact Me</button>
-        {isVisible ? (
+        {isVisible ?(
         <Modal onClose={() =>{
             setIsVisible(false)
         }} /> )
         : null}
+        
         
     </div>
     );

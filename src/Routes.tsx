@@ -23,9 +23,9 @@ function Routes() {
                 <Route path="/location">
                     <Location />
                 </Route>
-                <Route path="/product">
+                <Route path="/product/:type">
                     <Product />
-                </Route>         
+                </Route>          
                 <Route path="/checkout">
                     <Checkout />
                 </Route>

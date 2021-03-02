@@ -15,7 +15,6 @@ import FormPay from './components/formPay';
 function Checkout() {
     const [enable, setEnable] = useState(false);
 
-        console.log(enable);
     return (
         <section className="checkout-main">
             <Navbar />

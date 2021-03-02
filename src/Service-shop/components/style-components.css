@@ -1,8 +1,23 @@
-.banner-service{
+.banner-service {
     width: 50%;
     height: 90%;
     background: #00000075;
     padding: 20px;
     box-sizing: border-box;
     border-radius: 25px;
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width: 1024px) {
+    .banner-service {
+        width: 60%;
+        height: 95%;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    .banner-service {
+        width: 90%;
+        height: 75%;
+    }
 }

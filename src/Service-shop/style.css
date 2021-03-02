@@ -10,4 +10,15 @@
     display: flex;
     height: calc(100vh - 145px);
     justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 1024px) {
+    .service-body{
+        height: calc(100vh - 105px);
+    }
+}
+@media screen and (max-width: 766px) {
+    .service-body{
+        height: calc(100vh - 85px);
+    }
 }

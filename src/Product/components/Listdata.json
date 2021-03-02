@@ -1,0 +1,65 @@
+{
+    "fruit": [
+        {
+            "name": "Apple",
+            "price": 2.20
+        },
+        {
+            "name": "Banana",
+            "price": 2.20
+        },
+        {
+            "name": "Orange",
+            "price": 2.20
+        },
+        {
+            "name": "Strawberry",
+            "price": 2.20
+        }
+    ],
+    "flower": [
+        {
+            "name": "Rose",
+            "price": 2.20
+        },
+        {
+            "name": "Daise",
+            "price": 2.20
+        },
+        {
+            "name": "Lilies",
+            "price": 2.20
+        }
+    ],
+    "pucculent": [
+        {
+            "name": "Burro's Tail",
+            "price": 2.20
+        },
+        {
+            "name": "Flaming Katy",
+            "price": 2.20
+        },
+        {
+            "name": "Aloe Vera",
+            "price": 2.20
+        },
+        {
+            "name": "Pincushion Cactus",
+            "price": 2.20
+        },        {
+            "name": "Roseum",
+            "price": 2.20
+        }
+    ],
+    "foliage": [
+        {
+            "name": "Myrtle",
+            "price": 2.20
+        },
+        {
+            "name": "Leather Fern",
+            "price": 2.20
+        }
+    ]
+}

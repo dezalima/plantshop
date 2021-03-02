@@ -10,10 +10,10 @@ import F from '../img/4.png'
 function Cards() {
     return (
         <div className="card-list">
-            <Link to="/product"><Card titulo="Foliages" numero={123} className='card-foliage' img={P} /></Link>
-            <Link to="/product"><Card titulo="Pucculent" numero={13} className='card-pucculent' img={S} /></Link>
-            <Link to="/product"><Card titulo="Flower" numero={83} className='card-flower' img={T} /></Link>
-            <Link to="/product"><Card titulo="Fruit" numero={22} className='card-fruit' img={F} /></Link>
+            <Link to="/product/foliage"><Card titulo="Foliages" numero={123} className='card-foliage' img={P} /></Link>
+            <Link to="/product/pucculent"><Card titulo="Pucculent" numero={13} className='card-pucculent' img={S} /></Link>
+            <Link to="/product/flower"><Card titulo="Flower" numero={83} className='card-flower' img={T} /></Link>
+            <Link to="/product/fruit"><Card titulo="Fruit" numero={22} className='card-fruit' img={F} /></Link>
         </div >
     )
 }

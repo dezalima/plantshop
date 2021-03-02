@@ -1,74 +1,88 @@
-.banner-shop{
+.banner-shop {
     width: 350px;
 }
-.banner-shop h1{
+
+.banner-shop h1 {
     font-size: 3em;
     color: #64b14d;
     opacity: 0.9;
 }
-.banner-shop span{
+
+.banner-shop span {
     color: #b7e9af;
 }
-.banner-shop .sub{
+
+.banner-shop .sub {
     color: #b7e9af;
     text-transform: uppercase;
     font-size: 15px;
     margin: 0;
     opacity: 0.9;
 }
-.banner-shop .info{
+
+.banner-shop .info {
     color: aliceblue;
     text-transform: uppercase;
     font-size: 15px;
     margin: 0;
     opacity: 0.9;
 }
-.banner-shop button{
+
+.banner-shop button {
     filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.15));
     padding: 10px 40px;
     color: aliceblue;
     font-size: 1.1em;
     text-align: center;
     border: none;
-    background:linear-gradient(to right,#7FCA21, #105200);
+    background: linear-gradient(to right, #7FCA21, #105200);
     opacity: 0.8;
     border-radius: 25px;
     margin-top: 60px;
     cursor: pointer;
 }
-.banner-shop button:focus{
+
+.banner-shop button:focus {
     outline-style: none;
-  }
+}
+
 /* cards */
-.card-shop{
+
+.card-shop {
     margin-right: 10px;
     width: 198px;
     height: 160px;
     background-position: center;
     border-radius: 20px;
     overflow: hidden;
-    background-size: 120%; 
-    transition: 1s all; 
+    background-size: 120%;
+    transition: 1s all;
     cursor: pointer;
     filter: grayscale(35%);
 }
-.card-shop:hover{
+
+.card-shop:hover {
     background-size: 140%;
     filter: grayscale(0%);
 }
-.card-foliage{
+
+.card-foliage {
     background-image: url(../img/card-1.png);
 }
-.card-pucculent{
+
+.card-pucculent {
     background-image: url(../img/card-2.png);
 }
-.card-flower{
+
+.card-flower {
     background-image: url(../img/card-3.png);
 }
-.card-fruit{
+
+.card-fruit {
     background-image: url(../img/card-4.png);
 }
-.card-info{
+
+.card-info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -76,34 +90,105 @@
     padding: 20px;
     box-sizing: border-box;
 }
-.card-info h3{
+
+.card-info h3 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     color: aliceblue;
     font-size: 1.5em;
     margin: 0;
 }
-.card-info-descricao{
+
+.card-info-descricao {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
-.card-info-descricao p{
+
+.card-info-descricao p {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     color: aliceblue;
     font-size: 1.1em;
 }
-.card-info-descricao img{
+
+.card-info-descricao img {
     width: 30px;
     height: 30px;
 }
-.card-list{
+
+.card-list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 500px;
     padding: 50px 20px;
     box-sizing: border-box;
+}
+
+@media screen and (max-width: 1024px) {
+    .banner-shop h1 {
+        font-size: 2.2em;
+        margin: 5px 0 10px;
+    }
+    .banner-shop button {
+        margin-top: 45px;
+        font-size: 1em;
+    }
+    .banner-shop .info, .banner-shop .sub {
+        font-size: 1em;
+    }
+    .card-list {
+        width: 335px;
+    }
+    .card-shop {
+        margin-bottom: 15px;
+        width: 135px;
+        height: 102px;
+        margin-right: 0;
+    }
+    .card-info h3, .card-info-descricao p {
+        font-size: 17px;
+    }
+    .card-info-descricao img {
+        width: 20px;
+        height: 20px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    .banner-shop h1 {
+        font-size: 1.2em;
+    }
+    .banner-shop .info, .banner-shop .sub {
+        display: none;
+    }
+    .banner-shop {
+        width: 247px;
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+    }
+    .banner-shop button {
+        display: none;
+    }
+    .card-list {
+        width: 320px;
+        padding: 36px 17px;
+    }
+    .card-shop {
+        margin-bottom: 15px;
+        width: 114px;
+        height: 102px;
+        margin-right: 0;
+    }
+    .card-info h3, .card-info-descricao p {
+        font-size: 15px;
+    }
+    .card-info-descricao img {
+        width: 20px;
+        height: 20px;
+        margin-top: 10px;
+    }
 }

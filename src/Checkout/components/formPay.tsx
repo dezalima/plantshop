@@ -1,9 +1,9 @@
 import './style-components.css';
 
 function FormPay(result: any) {
-    console.log(result)
     return (
-        <div className={result === true ? 'form-info' : 'form-info disable'}>
+        <div className={result.result === true ? 'form-info' : 'form-info disable'}>
+            <div>
             <form action="">
                 <h2>Delivery</h2>
                 <div className="label-float">
@@ -49,6 +49,7 @@ function FormPay(result: any) {
                 </div>
                 <button className="button-form" type="submit">Check out</button>
             </form>
+            </div>
         </div>
     )
 }

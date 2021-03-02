@@ -19,16 +19,16 @@ function Home() {
                 <div className="icons">
                     <ul>
                         <li>
-                            <Link to="/product"><img src={P} alt="foliage"/></Link>
+                            <Link to="/product/foliage"><img src={P} alt="foliage"/></Link>
                         </li>
                         <li>
-                            <Link to="/product"><img src={S} alt="pucculent" /></Link>
+                            <Link to="/product/pucculent"><img src={S} alt="pucculent" /></Link>
                         </li>
                         <li>
-                            <Link to="/product"><img src={T} alt="flower" /></Link>
+                            <Link to="/product/flower"><img src={T} alt="flower" /></Link>
                         </li>
                         <li>
-                            <Link to="/product"><img src={F} alt="fruit" /></Link>
+                            <Link to="/product/fruit"><img src={F} alt="fruit" /></Link>
                         </li>
                     </ul>
                 </div>

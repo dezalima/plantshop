@@ -1,13 +1,6 @@
 import { useState } from 'react';
 import './style-components.css';
 
-// interface User{
-//     name: string;
-//     lastname: string;
-//     email: string;
-//     telephone: string;
-// }
-
 function FormData({onEnable = () => { } }) {
     const [user, setUser] = useState({
         name: "",

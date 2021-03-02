@@ -50,3 +50,30 @@
 .show{
     display: block;
 }
+@media screen and (max-width: 1024px) {
+    .product-body{
+        height: calc(100vh - 105px);
+    }
+    .product-body h1 {
+        font-size: 2em;
+    }
+    .product-body p {
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 766px) {
+    .product-body{
+        height: calc(100vh - 85px);
+    }
+    .product-body h1 {
+        font-size: 1.8em;
+    }
+    .product-body p {
+        font-size: 1.1em;
+        width: 300px;
+    }
+    .product-button {
+        left: -9px;
+        bottom: -28px;
+    }
+}
